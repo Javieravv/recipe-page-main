@@ -29,11 +29,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-size: var(--fontSize);
 }
 
 body {
     font-family: 'Young-serif';
-    font-size: var(--fontSize);
 }
 
 p {
@@ -160,7 +160,7 @@ header {
 /* Media queries */
 
 @media (width > 600px) {
-    body {
+    * {
         font-size: 1.2rem;
     }
     main {
