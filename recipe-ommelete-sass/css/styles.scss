@@ -1,0 +1,156 @@
+// Css principal
+@import './variables';
+
+body {
+    // font-family: $fontOutfit;
+    font-family: $fontYoung;
+    background-color: $colorEggshell;
+
+    @media (width > $MobileWidth) {
+        display: flex;
+        place-content: center;
+    }
+}
+
+p {
+    color: $colorWengeBrown;
+}
+
+hr {
+    border: 1px solid $colorLightGrey;
+    margin: $marginHr;
+}
+
+ul>li,
+ol>li {
+    list-style-position: inside;
+    margin-top: $marginTopLi;
+    color: $colorWengeBrown;
+    margin-left: 25px;
+    text-indent: -20px;
+}
+
+ul>li::marker, ol>li::marker {
+    color: $colorNutmeg;
+    font-weight: bold;
+}
+
+p,
+li {
+    line-height: 2;
+}
+
+h1 {font-family: $fontYoung;
+    font-size: 2rem;
+    padding: 15px 0;
+}
+
+hr {
+    border: 1px solid $colorLightGrey;
+    margin: $marginHr;
+
+    @media (width > $MobileWidth) {
+        margin: 30px 0px;
+    }
+}
+
+.title-recipe {
+    font-size: 2rem;
+    color: $colorNutmeg;
+    padding: 15px 0;
+}
+
+// Css para etiqueta main
+
+main {
+    background-color: $colorWhite;
+    display: flex;
+    flex-direction: column;
+    
+    .recipe {
+        padding: $paddingDiv;
+    }
+
+    @media (width > $MobileWidth) {
+        width: 80%;
+        padding: 25px 30px;
+        border-radius: 15px;
+        margin-top: 25px;
+        .recipe {
+            padding: 0 0;
+        }
+    }
+
+    @media (width > calc($MobileWidth + 250px)) {
+        width: 60%;
+    }
+
+    @media (width > calc($MobileWidth + 350px)) {
+        width: 50%;
+    }
+}
+
+// Header
+header {
+    display: flex;
+
+    img {
+        width: 100%;
+    }
+
+    @media (width > $MobileWidth) {
+        img {
+            border-radius: 10px;
+        }
+    }
+}
+
+// Recipe Time
+.recipe-time {
+    background-color: $colorDarkRaspberry;
+    border-radius: 15px;
+    margin: 25px 15%;
+    padding: 25px 25px !important;
+
+    h2 {
+        color: $colorDarkRaspberryTitle;
+    }
+
+    ul > li::marker {
+        color: $colorDarkRaspberryTitle !important;
+    }
+
+    @media (width > $MobileWidth) {
+        margin: 25px 0;
+    }
+}
+
+// Recipe nutrition css
+.recipe-nutrition {
+    display: flex;
+    flex-direction: column;
+
+    * {
+        margin-top: 10px;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 25px;
+
+        div {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            border-bottom: 1px solid $colorEggshell;
+
+            p:last-child {
+                font-weight: bold;
+                color: $colorNutmegParag;
+            }
+        }
+        
+    }
+}
+
+
