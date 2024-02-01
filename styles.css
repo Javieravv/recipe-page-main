@@ -19,7 +19,7 @@
     --colorLightGrey: hsl(30, 18%, 87%);
     --colorWengeBrown: hsl(30, 10%, 34%);
     --colorDarkCharcoal: hsl(24, 5%, 18%);
-    --fontSize: 15px;
+    --fontSize: 16px;
     --paddingDiv: 5px 45px;
     --marginHr: 5px 45px;
     --marginTopLi: 15px;
@@ -37,8 +37,8 @@ body {
 }
 
 p {
+    /* font-size: 1.2rem; */
     color: var(--colorWengeBrown);
-    font-size: 1.2rem;
 }
 
 hr {
@@ -70,6 +70,7 @@ main {
     flex-direction: column;
     width: 100%;
     background-color: var(--colorWhite);
+    margin-bottom: 15px;
 
     >div {
         margin-top: 20px;
@@ -159,7 +160,7 @@ header {
 /* Media queries */
 
 @media (width > 600px) {
-    * {
+    body {
         font-size: 1.2rem;
     }
     main {
