@@ -37,7 +37,6 @@ body {
 }
 
 p {
-    /* font-size: 1.2rem; */
     color: var(--colorWengeBrown);
 }
 
@@ -72,11 +71,11 @@ main {
     background-color: var(--colorWhite);
     margin-bottom: 15px;
 
-    >div {
+    div {
         margin-top: 20px;
     }
 
-    >.recipe {
+    .recipe {
         padding: var(--paddingDiv);
     }
 
@@ -94,7 +93,7 @@ header {
         padding: var(--paddingDiv);
     }
 
-    div {
+    >div {
         margin-top: 0 !important;
         padding: 0 !important;
     }
@@ -139,10 +138,10 @@ header {
         display: flex;
         flex-direction: column;
 
-        div {
+        >div {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            padding: 15px 40px;
+            padding: 5px 40px;
             border-bottom: 1px solid var(--colorLightGrey);
         }
 
@@ -163,19 +162,18 @@ header {
     * {
         font-size: 1.2rem;
     }
+
     main {
         width: 90%;
         margin: 0 auto;
     }
 
     header {
+        padding: var(--paddingDiv);
 
         >* {
             padding: 0 0;
         }
-        /* padding: var(--paddingDiv); */
-        padding: var(--paddingDiv);
-
 
         div {
             margin-top: 10px !important;
