@@ -5,10 +5,12 @@ body {
     // font-family: $fontOutfit;
     font-family: $fontYoung;
     background-color: $colorEggshell;
+    font-size: calc($fontSize);
 
     @media (width > $MobileWidth) {
         display: flex;
         place-content: center;
+        font-size: 1.3rem;
     }
 }
 
