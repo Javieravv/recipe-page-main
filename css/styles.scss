@@ -1,11 +1,11 @@
-// Css principal
 @import './variables';
+// Css principal
 
 body {
     // font-family: $fontOutfit;
     font-family: $fontYoung;
     background-color: $colorEggshell;
-    font-size: calc($fontSize);
+    font-size: $fontSize;
 
     @media (width > $MobileWidth) {
         display: flex;
@@ -32,7 +32,8 @@ ol>li {
     text-indent: -20px;
 }
 
-ul>li::marker, ol>li::marker {
+ul>li::marker,
+ol>li::marker {
     color: $colorNutmeg;
     font-weight: bold;
 }
@@ -42,7 +43,8 @@ li {
     line-height: 2;
 }
 
-h1 {font-family: $fontYoung;
+h1 {
+    font-family: $fontYoung;
     font-size: 2rem;
     padding: 15px 0;
 }
@@ -68,7 +70,7 @@ main {
     background-color: $colorWhite;
     display: flex;
     flex-direction: column;
-    
+
     .recipe {
         padding: $paddingDiv;
     }
@@ -78,6 +80,7 @@ main {
         padding: 25px 30px;
         border-radius: 15px;
         margin-top: 25px;
+
         .recipe {
             padding: 0 0;
         }
@@ -118,7 +121,7 @@ header {
         color: $colorDarkRaspberryTitle;
     }
 
-    ul > li::marker {
+    ul>li::marker {
         color: $colorDarkRaspberryTitle !important;
     }
 
@@ -136,6 +139,10 @@ header {
         margin-top: 10px;
     }
 
+    p {
+        font-size: $fontSize;
+    }
+
     article {
         display: flex;
         flex-direction: column;
@@ -151,8 +158,5 @@ header {
                 color: $colorNutmegParag;
             }
         }
-        
     }
 }
-
-
