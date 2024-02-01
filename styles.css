@@ -20,8 +20,8 @@
     --colorWengeBrown: hsl(30, 10%, 34%);
     --colorDarkCharcoal: hsl(24, 5%, 18%);
     --fontSize: 16px;
-    --paddingDiv: 5px 45px;
-    --marginHr: 5px 45px;
+    --paddingDiv: 5px 40px;
+    --marginHr: 5px 40px;
     --marginTopLi: 15px;
 }
 
@@ -34,6 +34,7 @@
 
 body {
     font-family: 'Young-serif';
+    background-color: var(--colorEggshell);
 }
 
 p {
@@ -59,6 +60,10 @@ li {
     line-height: 2;
 }
 
+h1 {
+    font-size: 2rem;
+}
+
 .title-recipe {
     font-size: 2rem;
     color: var(--colorNutmeg);
@@ -78,7 +83,6 @@ main {
     .recipe {
         padding: var(--paddingDiv);
     }
-
 }
 
 /* css header */
@@ -86,25 +90,13 @@ main {
 header {
     display: flex;
     flex-direction: column;
+    margin-top: 0 !important;
+    padding: 0 0 !important;
 
-    >* {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        padding: var(--paddingDiv);
-    }
-
-    >div {
-        margin-top: 0 !important;
-        padding: 0 !important;
-    }
-
-    div>img {
+    img {
         width: 100%;
     }
 
-    h1 {
-        font-size: 2rem;
-    }
 }
 
 /* css recipe-time */
@@ -129,6 +121,7 @@ header {
 .recipe-nutrition {
     display: flex;
     flex-direction: column;
+    margin-bottom: 25px;
 
     >* {
         margin-top: var(--marginTopLi);
@@ -141,6 +134,7 @@ header {
         >div {
             display: grid;
             grid-template-columns: 1fr 1fr;
+            /* justify-content: space-between; */
             padding: 5px 40px;
             border-bottom: 1px solid var(--colorLightGrey);
         }
@@ -163,42 +157,38 @@ header {
         font-size: 1.2rem;
     }
 
+    h1 {
+        font-size: 2rem;
+    }
+
     main {
         width: 90%;
         margin: 0 auto;
+        padding: 15px 45px;
+        border-radius: 15px;
+
+        .recipe {
+            padding: 0 0;
+        }
     }
 
     header {
         padding: var(--paddingDiv);
 
-        >* {
-            padding: 0 0;
-        }
-
-        div {
-            margin-top: 10px !important;
-            margin-bottom: 10px !important;
-        }
-
-        div>img {
-            border-radius: 30px;
-            /* padding: var(--paddingDiv); */
-        }
-
-        h1 {
-            font-size: 3rem;
+        img {
+            border-radius: 15px;
         }
     }
 }
 
 @media (width > 800px) {
     main {
-        width: 80%;
+        width: 70%;
     }
 }
 
 @media (width > 900px) {
     main {
-        width: 60%;
+        width: 50%;
     }
 }
